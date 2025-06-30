@@ -1,0 +1,33 @@
+# Jangan upload file sensitif
+wp-config.php
+.htaccess
+
+# Core WordPress
+wp-admin/
+wp-includes/
+
+# Ignore semua plugin & tema, kecuali buatan sendiri
+wp-content/plugins/*
+!wp-content/plugins/elementor/
+!wp-content/plugins/akismet/
+!wp-content/plugins/better-wp-security/
+
+wp-content/themes/*
+!wp-content/themes/twentytwentyfive/
+!wp-content/themes/twentytwentyfour/
+!wp-content/themes/twentytwentythree/
+
+# Ignore uploads (gambar & media)
+wp-content/uploads/
+
+# Sampah & log
+*.log
+*.sql
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+
+# Sistem
+.DS_Store
+Thumbs.db
