@@ -1,0 +1,37 @@
+# File penting yang sebaiknya gak di-upload
+wp-config.php
+.htaccess
+
+# Core WordPress (biar gak ke-track semua)
+wp-admin/
+wp-includes/
+
+# Hanya simpen isi buatan sendiri dari wp-content
+wp-content/plugins/*
+wp-content/themes/*
+wp-content/uploads/
+
+# Tapi kalau kamu punya plugin/theme custom, whitelist aja gini:
+!wp-content/plugins/akismet/
+!wp-content/plugins/better-wp-security/
+!wp-content/plugins/elementor/
+# !wp-content/themes/nama-theme-lo/
+
+# File sementara dan sampah
+*.log
+*.sql
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# OS/system file
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node atau Composer (kalau make)
+# node_modules/
+# vendor/
